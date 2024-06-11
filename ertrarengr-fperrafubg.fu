@@ -1,0 +1,30 @@
+#!/bin/sh
+# Author: mhoye - mhoye@bespokeio.com
+# License: 2-clause BSD
+
+NAME=ITN16
+AUTHOR=mhoye
+REPO=github.com/mhoye/ITN16
+
+# ITN16 is a console font that employs ROT13 encryption to secure the
+# display layer of your linux console. 
+#
+# The author is taking no questions at this time. 
+#
+# This script is for updating ITN16 repository screenshot.
+
+clear
+echo
+echo The $NAME console font created by $AUTHOR. 
+echo Available at $REPO
+echo 
+echo This is a derivative of the Uni1-VGA16 console font securely encrypted 
+echo via ROT13. This serves no purpose and should not be deployed in any
+echo computing environment. The author is taking no questions at this time.  
+echo
+echo "Output from showconsolefont:"
+echo
+showconsolefont
+fbgrab $NAME.png
+echo $NAME.png updated.
+exit 0
